@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="a"></div>
+    <script type="text/javascript">
+      function hasClass(el,cls){
+        var reg = new RegExp('(//s|^)'+cls+'(//s|$)');
+        return reg.test(el.className);
+      }
+      function addClass(el,cls){
+        if(!hasClass(el,cls)){
+          el.className = el.className + " " + cls;
+        }
+      }
+    </script>
+  </body>
+</html>

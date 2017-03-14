@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>requireTest</title>
+    <style media="screen">
+      .other{
+        border:1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn">点我</div>
+    <!-- 这是一次require.js的实验，实验效果显著 -->
+    <script type="text/javascript" data-main="./app/main.js" src="./lib/require.js"></script>
+    <!-- 这里不再调用大量的script标签，而是之只引用一个标签，这里data-main变量是requirejs自定义变量，
+    目的是引用主程序入口文件，src引用的是require.js; -->
+  </body>
+</html>

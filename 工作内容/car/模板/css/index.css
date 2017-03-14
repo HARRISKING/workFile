@@ -1,0 +1,133 @@
+div,ul,li,p{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+html{
+  font-size: 7px;
+  height:100%;
+}
+body{
+  margin:0px;
+  height:100%;
+}
+#box{
+  max-width: 100%;
+  margin: 0 auto;
+  background: rgb(26, 51, 85);
+  padding-top:8%;
+  padding-bottom:8%;
+
+}
+#inner-box{
+  max-width: 90%;
+  margin: auto;
+}
+#head{
+  margin-bottom: 10%;
+}
+#head >img{
+  width: 45%;
+}
+#part-all{
+  margin-top: 5%;
+  list-style: none;
+}
+#part-all:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.little-tittle{
+  margin-bottom: 2%;
+}
+.cube{
+  width: 6%;
+}
+p.title{
+  display: inline-block;
+  color: #fff;
+  font-family: "微软雅黑";
+  font-size: 2rem;
+  position: relative;
+  left: 2%;
+  top: -0.6rem;
+}
+li p{
+  font-family: "微软雅黑";
+  font-size: 1.9rem;
+}
+li{
+  position: relative;
+  text-align: center;
+}
+li a p {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0px;
+  width: 100%;
+}
+li{
+  text-align: center;
+  margin-left: 1%;
+}
+li>a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.box-left img{
+  position: relative;
+  top: 3rem;
+  height: 40%;
+}
+.box-left{
+  width: 35%;
+  height: 16rem;
+  float: left;
+  padding: 5px;
+  margin-left: 0px;
+}
+.box-middle img{
+  height: 30%;
+  position: relative;
+  top:4rem;
+}
+.box-middle{
+  width: 22%;
+  height: 16rem;
+  float: left;
+}
+.box-right p{
+  display: block;
+  margin-top: 4px;
+}
+.box-right img{
+  position: relative;
+  top: 0.675rem;
+  height: 50%;
+}
+.box-right{
+  float: right;
+  width: 41%;
+  height:7.8rem;
+}
+.box-right:last-child{
+  margin-top: 0.4rem;
+}
+
+
+/*颜色区：*/
+.green{
+  background-color: rgb(48,193, 160);
+}
+.blue{
+  background: rgb(65, 162, 231);
+}
+.purple{
+  background: rgb(152, 104, 214);
+}
+.light-blue{
+  background: rgb(2, 188, 213);
+}
