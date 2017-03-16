@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="row-three-heightth=device-row-three-heightth, initial-scale=1, maximum-scale=1,user-scable=no">
+    <meta charset="utf-8">
+    <title>更多车身养护套餐选择</title>
+    <link rel="stylesheet" href="../css/test.css">
+  </head>
+  <body>
+    <div id="content">
+      <div id="content-all">
+        <div id="head-pic">
+          <img src="../pic/logo_white.png" alt="无法显示">
+        </div>
+        <div class="title-big">
+          <p class="h1">车身养护套餐</p>
+          <p class="h2">(&nbsp &nbsp注：所有服务项目都能拆分送朋友一起分享！ )</p>
+        </div>
+    <div id="part">
+      <div class="header">
+        <img src="../pic/color_cube-03.png" alt="无法显示">
+        <p class="inner-text">镀晶套餐</p>
+      </div>
+      <div class="box-all">
+        <div class="box-left">
+          <div class="box1 green row1">
+            <a href="#">
+              <img src="../pic/套餐-04.png" alt="无法显示">
+              <p>套餐价：1950元</p>
+              <div class="line">原价：2788元</div>
+            </a>
+          </div>
+          <div class="box1 green row2">
+            <a href="#">
+              <img src="../pic/套餐-04.png" alt="无法显示">
+              <p>套餐价：1950元</p>
+              <div class="line">原价：2788元</div>
+            </a>
+          </div>
+        </div>
+        <div class="box2 r3-c3">
+          <div class=" green">
+            <p>加：1次镀晶</p>
+          </div>
+          <div class=" blue">
+            <p>加：1次镀晶</p>
+          </div>
+          <div class=" light-blue">
+            <p>加：2次镀晶护理</p>
+          </div>
+          <div class=" light-blue">
+            <p>加：2次镀晶护理</p>
+          </div>
+          <div class=" light-blue">
+            <p>加：2次镀晶护理</p>
+          </div>
+          <div class=" light-blue">
+            <p>加：2次镀晶护理</p>
+        </div>
+        <div class=" light-blue">
+          <p>加：2次镀晶护理</p>
+        </div>
+        <div class=" light-blue">
+          <p>加：2次镀晶护理</p>
+        </div>
+        <div class=" light-blue">
+          <p>加：2次镀晶护理</p>
+      </div>
+      </div>
+    </div>
+      </div>
+
+      <div id="part">
+        <div class="header">
+          <img src="../pic/color_cube-03.png" alt="无法显示">
+          <p class="inner-text">镀晶套餐</p>
+        </div>
+        <div class="box-all">
+          <div class="box-left">
+            <div class="box1 green row3">
+              <a href="#">
+                <img src="../pic/套餐-04.png" alt="无法显示">
+                <p>套餐价：1950元</p>
+                <div class="line">原价：2788元</div>
+              </a>
+            </div>
+          </div>
+          <div class="box2 r3-c3">
+            <div class="green row-one">
+              <p>加：1次镀晶</p>
+            </div>
+            <div class="blue new-column row-two">
+              <p>加：1次镀晶</p>
+            </div>
+            <div class="light-blue new-column row-two">
+              <p>加：2次镀晶护理</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+      <script type="text/javascript">
+      // var box2=document.getElementsByClassName("box2");
+      function hasClass(el, cls){
+        var reg = new RegExp('(\\s|^)' + cls + '(\s|$)','g');
+        return reg.test(el.className);
+      };
+      var childrenNode
+      var over;
+      function overTurn(){
+        over = setInterval(turn, 5000);
+      };
+      function turn(){
+        var num = Math.floor(Math.random()*9);
+        $('.box2').eq(0).children().removeClass('animate');
+        $('.box2').eq(0).children().eq(num).addClass('animate');
+      };
+      function stopOverTurn(){
+        clearInterval(over);
+      }
+      overTurn();
+      // console.log(box2[0].children[3]);
+      // console.log(num);
+      // console.log(box2[0].children[num]);
+      </script>
+  </body>
+</html>

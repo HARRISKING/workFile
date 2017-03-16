@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="a b"></div>
+  </body>
+  <script type="text/javascript">
+    // function hasClass(el,cls) {
+    // var reg =new RegExp('(\\s|^)'+cls+'(\\s|$)')
+    // return reg.test(el.className);
+    // }
+    //
+    // function addClass(el,cls){
+    //   if(!hasClass(el,cls)){
+    //     el.className = el.className + ' ' + cls;
+    //   }
+    // };
+    //
+    // function removeClass(el,cls){
+    //   if(hasClass(el,cls)){
+    //     el.className = el.className.replace(reg,' ').replace(/\s{2,}/g,' ');
+    //   }
+    // };
+
+    // function hasClass(el, cls) {
+    //  //左边是开头或者空格,右边是结尾或者空格
+    // var reg = new RegExp('(\\s|^)' + cls + '(\s|$)', 'g');
+    //  return reg.test(el[0].className);
+    // }
+    // function addClass(el, cls) {
+    //  var reg = new RegExp('(\\s|^)' + cls + '(\s|$)', 'g');
+    // if (!reg.test(el.className)) {
+    // el.className = el.className + ' ' + cls;
+    // }
+    // }
+    // function removeClass(el, cls) {
+    //  var reg = new RegExp('(\\s|^)' + cls + '(\s|$)', 'g');
+    //  //先替换成空格 再去掉多余的空格
+    // if (reg.test(el.className)) {
+    // el.className = el.className.replace(reg, ' ').replace(/\s{2,}/g, ' ');
+    // }
+    // }
+
+
+
+
+      var Utils = {
+
+      hasClass: function(ele, cls){
+          return !!new RegExp('\\b'+cls+'\\b').test(ele.className);
+          // !!强制转化为bool值;
+      },
+
+      addClass:function(ele, cls){
+        if(ele.length && ele.length > 0){
+            for(var i=0; i<ele.length; i++){
+                Utils.singleAddClass(ele[i], cls);
+            }
+        }else{
+            Utils.singleAddClass(ele, cls);
+        }
+      },
+
+      removeClass:function(ele, cls){
+         if(ele.length && ele.length > 0){
+            for(var i=0; i<ele.length; i++){
+                Utils.singleRemoveClass(ele[i], cls);
+            }
+        }else{
+            Utils.singleRemoveClass(ele, cls);
+        }
+      },
+
+      singleAddClass: function(ele, cls){
+          if(Utils.hasClass(ele,cls)) return;
+          ele.className += ' ' + cls;
+      },
+
+      singleRemoveClass: function(ele, cls){
+          ele.className = ele.className.replace(new RegExp('\\b'+cls+'\\b', 'g'), '');
+      },
+
+      indexOf: function(ele){
+          var parent = ele.parentElement,
+              siblings = parent.children;
+          for(var i=0; i<siblings.length; i++){
+              if(ele === siblings[i]) return i;
+          }
+          return -1;
+      }
+      };
+      var aa = Utils.hasClass('.a','b');
+      console.log(aa);
+  </script>
+</html>
