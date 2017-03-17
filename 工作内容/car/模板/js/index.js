@@ -1,8 +1,8 @@
-// var box2=document.getElementsByClassName("box2");
-// function hasClass(el,cls){
-//   var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)','g');
-//   return reg.test(el.className);
-// };
+var box2=document.getElementsByClassName("box2");
+function hasClass(el,cls){
+  var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)','g');
+  return reg.test(el.className);
+};
 var childrenNode
 var over;
 function overTurn(){
