@@ -36,23 +36,53 @@
     </article>
     <script src="js/jquery.min.js"></script>
     <script>
-    $(".verification").click(function() {
+      $('.verification').on('click',function(){
         var $this = $(this);
         $this.hide();
-        var that = $(".count");
-        that.show();
-        var handler = setInterval(function() {
-            var time = parseInt(that.attr("data-time"));
-            if (time > 1) {
-                time--;
-                that.attr("data-time", time).html(time + "s");
-            } else {
-                clearInterval(handler);
-                that.hide().attr("data-time", 60).html("60s");
-                $this.show();
-            }
-        }, 1000)
-    })
+        var $that = $('.count');
+        $that.show();
+
+        var readSecound = setInterval(function(){
+          var time = parseInt($that.attr('data-time'),10);
+
+          if(time > 1){
+            time--;
+
+          }else{
+
+          }
+        }1000)
+      })
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // $(".verification").click(function() {
+    //     var $this = $(this);
+    //     $this.hide();
+    //     var that = $(".count");
+    //     that.show();
+    //     var handler = setInterval(function() {
+    //         var time = parseInt(that.attr("data-time"));
+    //         if (time > 1) {
+    //             time--;
+    //             that.attr("data-time", time).html(time + "s");
+    //         } else {
+    //             clearInterval(handler);
+    //             that.hide().attr("data-time", 60).html("60s");
+    //             $this.show();
+    //         }
+    //     }, 1000)
+    // })
     </script>
 </body>
 

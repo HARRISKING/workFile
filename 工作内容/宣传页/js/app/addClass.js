@@ -25,6 +25,8 @@
         return !!ele.className.match(new RegExp('\\b'+cls+'\\b'));
     },
 
+
+
     addClass:function(ele, cls){
       if(ele.length && ele.length > 0){
           for(var i=0; i<ele.length; i++){

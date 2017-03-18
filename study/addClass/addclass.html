@@ -6,22 +6,28 @@
   </head>
   <body>
     <div class="a b">
-
+      dfgsdfgsfggsfdgs
     </div>
     <script type="text/javascript">
-    var array = document.getElementsByTagName('div')[0].className.split(' ');
-    console.log(array);
-
     function addClass(el,cls){
+      var ele = document.querySelector('el');
+      console.log(ele);
+      // var array = ele.split(" ");
+      console.log(array);
       for(var i=0; i<array.length; i++){
         if(array[i] !== cls){
           array.push(cls);
           var str = array.join(' ');
-
         }
       }
       return str;
     };
+    addClass('.a','c');
+
+
+
+
+
     function removeClass(el,cls){
       for(var i=0; i<array.length; i++){
         if(array[i] === cls){
