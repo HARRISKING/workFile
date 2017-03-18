@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>addclass</title>
+  </head>
+  <body>
+    <div class="a b">
+
+    </div>
+    <script type="text/javascript">
+    var array = document.getElementsByTagName('div')[0].className.split(' ');
+    console.log(array);
+
+    function addClass(el,cls){
+      for(var i=0; i<array.length; i++){
+        if(array[i] !== cls){
+          array.push(cls);
+          var str = array.join(' ');
+
+        }
+      }
+      return str;
+    };
+    function removeClass(el,cls){
+      for(var i=0; i<array.length; i++){
+        if(array[i] === cls){
+          array.splice(array[i],1);
+        }
+      }
+    }
+
+
+
+
+
+    </script>
+  </body>
+</html>

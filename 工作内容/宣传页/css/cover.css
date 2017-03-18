@@ -1,23 +1,21 @@
-@media screen and (max-width:350px){
-  .s-wid{
 
-  }
-}
 div,p,a,li,ul,img{
   padding: 0;
   margin: 0;
   list-style: none;
   font-size: 10px;
 }
-
-#cover{
+a,button,input,li{
+  -webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+.cover{
   background-color: #222;
   opacity: 0.6;
   position: fixed;
   z-index: 8;
   height: 100%;
   width: 100%;
-  /*display: none;*/
+  display: none;
 }
 .bomb{
   position: fixed;
@@ -29,8 +27,7 @@ div,p,a,li,ul,img{
   background-color: #fff;
   border-radius: 6px;
   text-align: center;
-  /*display: none;*/
-
+  display: none;
 }
 .bomb p{
   margin: 5% 0;
@@ -71,4 +68,11 @@ div,p,a,li,ul,img{
   position: absolute;
   top: 80%;
   left: 30%;
+}
+
+.appear{
+  display: block;
+}
+.bomb .tar{
+  background: rgb(192, 172, 139);
 }

@@ -11,21 +11,18 @@
     <link rel="stylesheet" href="./css/ad-page.css" media="screen" title="no title" charset="utf-8">
   </head>
     <body>
-
-
-        <div id="cover">
+      <div class="cover">
         </div>
-
         <div id="main">
           <img src="./pic/coffee.png" alt="无法显示" />
           <div class="navigation">
-            <a href="#">
+            <a href="javascript:;">
               <img src="./pic/navigation.png" alt="" />
             </a>
           </div>
           <div id="footer">
-            <a href="#">我要报名</a>
-            <a href="#">不感兴趣</a>
+            <a href="javascript:;">我要报名</a>
+            <a class="non-interest" href="javascript:;">不感兴趣</a>
           </div>
         </div>
         <div class="bomb">
@@ -36,7 +33,23 @@
             <li>此类活动不是我的style</li>
             <li>就是单纯没兴趣</li>
           </ul>
-          <a href="#" class="button">确定</a>
-        </div>
+        <a href="javascript:;" class="button">确定</a>
+      </div>
+      <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+      <script type="text/javascript">
+        $('.non-interest').on('click',function(){
+          $('.cover').addClass('appear');
+          $('.bomb').addClass('appear');
+        });
+        $('.button').on('click',function(){
+          $('.cover').removeClass('appear');
+          $('.bomb').removeClass('appear');
+          $('.bomb>ul>li').removeClass('tar');
+        });
+        $('.bomb ul li').on('click',function(){
+          $(this).siblings('li').removeClass('tar');
+          $(this).addClass('tar');
+        })
+      </script>
   </body>
 </html>
