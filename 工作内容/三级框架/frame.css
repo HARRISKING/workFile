@@ -1,0 +1,40 @@
+.box{
+  border: 1px solid #ccc;
+  width: 500px;
+  height: 100px;
+  /*display: inline-block;*/
+}
+
+.box1{
+  background-color: green;
+}
+
+.box2{
+  background-color: yellow;
+  display: none;
+}
+
+.box3{
+  background-color: blue;
+  display: none;
+}
+
+.btn{
+  border: 1px solid #ccc;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+}
+
+.btn0{
+  background: red;
+  color: #fff;
+}
+
+.btn1{
+  background: pink;
+}

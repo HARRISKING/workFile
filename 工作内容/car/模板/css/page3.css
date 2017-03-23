@@ -4,9 +4,12 @@ div,ul,li,p,img{
 }
 html{
   font-size: 17px;
+  height: 100%;
 }
 body{
   margin:0;
+  height: 100%;
+
 }
 p{
   font-family: "微软雅黑";
@@ -15,6 +18,8 @@ p{
 #content{
   border: 1px solid #ccc;
   margin: 0 auto;
+  height: 100%;
+
   background: rgb(26, 51, 85);
 }
 #content-all{
@@ -103,8 +108,8 @@ p{
   top:2rem;
 }
 .box2{
-  width: 74%;
-  height: 9rem;
+  width: 76%;
+  height: 10rem;
   display: flex;
   flex-wrap: wrap;
   font-size: 0.7rem;
@@ -137,17 +142,17 @@ p{
   height: 5.47rem;
 }
 .row3{
-  height: 8.4rem;
+  height: 9.6rem;
 }
 /*行*/
 .box2 .row-three{
   height: 2.53rem;
 }
 .box2 .row-two{
-  height: 4rem;
+  height: 4.6rem;
 }
 .box2 .row-one{
-  height: 8.4rem;
+  height: 9.6rem;
 }
 
 /*列*/

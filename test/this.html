@@ -6,6 +6,26 @@
   </head>
   <body>
     <script type="text/javascript">
+      var foo = function(){
+        var a = 4,
+            b = 7;
+        var bar = function(){
+          var b =8,
+              c = 11;
+          a += b + c;
+        };
+        console.log(a);
+        bar();
+      };
+      foo();
+
+
+
+
+
+
+
+
       // var myObject = {
       //   value: 0,
       //   increment: function(){
@@ -15,9 +35,34 @@
       // myObject.increment();
       // document.writeln(myObject.value);
 
-      var sum = function(a,b){
-        return a+b;
-      }
+      // var add = function(a,b){
+      //   return a+b;
+      //   console.log(this);
+      // }
+      // var sum=add(1,4);
+      // console.log(this);
+
+      // function Car(name,color,status){
+      //   this.name = name;
+      //   this.color = color;
+      //   this.status = status;
+      // }
+      // Car.prototype.run = function(){
+      //   console.log(this.name + " is running");
+      // }
+      // Car.prototype.stop = function(){
+      //   console.log(this.name + "is stoping");
+      // }
+      // Car.prototype.getStatus = function(){
+      //   console.log(this.name + "is" + this.status);
+      // }
+      //
+      // var myCar = new Car('ferrari','yellow','running');
+      // myCar.run();
+
+
+
+
     </script>
   </body>
 </html>
