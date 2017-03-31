@@ -3,35 +3,40 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(34, 104, 164);
-    height: 180px;
-    padding-top: 20px;
+    background-color: rgb(50, 102, 204);
 }
 
-.me img {
+.me>img {
     width: 25%;
     border-radius: 50%;
+    margin: 40px 0 20px 0;
 }
 
 .me-name {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
+    margin: 10px auto;
 }
 
 .me-tel {
     color: #fff;
     font-size: 13px;
+    margin-bottom: 15px;
 }
 
 .me-lists ul {
 	margin-bottom: 10px;
 }
 
+.me-lists .bot {
+	margin-bottom: 2px;
+}
+
 .me-lists ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 14px 10px;
     background-color: #fff;
     color: #333;
 }

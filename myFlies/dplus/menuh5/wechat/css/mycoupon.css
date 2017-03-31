@@ -17,7 +17,7 @@
 
 .tab-active {
     position: relative;
-    color: rgb(34, 104, 164);
+    color:#3266cc;
     font-weight: 500;
 }
 
@@ -30,7 +30,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(34, 104, 164);
+    background-color: #3266cc;
 }
 
 .tab2 .panel1 {
@@ -84,4 +84,3 @@
 .c-date {
     font-size: 12px;
 }
-

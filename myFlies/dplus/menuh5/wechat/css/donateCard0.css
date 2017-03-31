@@ -51,8 +51,12 @@ body{
 .box .amount{
   display: flex;
   justify-content: space-between;
-
 }
+
+.box p:last-child{
+  color: #999;
+}
+
 .amount p{
   margin-right: 10px;
   color: #999;
@@ -61,7 +65,7 @@ body{
 .word2{
   margin: 15px 3% 30px 3%;
   font-size: 0.8rem;
-  color: #999;
+  color: black;
 }
 .btn{
   justify-content: center;
@@ -77,5 +81,5 @@ body{
 }
 .active{
   background: rgb(248, 156, 13);
-  color: #fff;
+  color: white !important;
 }

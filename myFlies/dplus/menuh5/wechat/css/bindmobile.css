@@ -6,6 +6,7 @@
     font-size: 14px;
     border: none;
     line-height: 30px;
+    color: black;
 }
 
 .mobile-num {
@@ -25,7 +26,7 @@
 
 .verification {
 	padding: 8px 10px;
-	background: rgb(84, 153, 210);
+	background: #3266cc;
 	color: #fff;
 	border: none;
 	border-radius: 6px;
@@ -36,7 +37,7 @@
 	margin-top: 35px;
 	width: 100%;
 	color: #fff;
-	background: rgb(84, 153, 210);
+  background: #3266cc;
 	font-size: 14px;
 	height: 45px;
 	border-radius: 5px;

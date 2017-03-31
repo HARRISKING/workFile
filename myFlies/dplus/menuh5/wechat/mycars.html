@@ -13,14 +13,6 @@
 </head>
 
 <body>
-    <header>
-        <div class="back">
-            <a href="javascript:history.back(-1)">
-                <i class="back-icon"></i>
-            </a>
-        </div>
-        <p>我的车</p>
-    </header>
     <section class="cars">
         <div class="cars-panel">
             <img src="./img/me/70-01.png" alt="" class="car-img">
@@ -64,9 +56,6 @@
       document.getElementsByTagName('section')[0].addEventListener('click',function(){
         window.location.href = "./mycar.html";
       });
-      document.getElementsByClassName('back')[0].addEventListener('click',function(){
-        window.history.go(-1);
-      })
     </script>
 </body>
 

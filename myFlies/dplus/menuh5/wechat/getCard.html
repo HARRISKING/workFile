@@ -36,6 +36,16 @@
     </section>
 
     <section class="tab-panel">
+      <div class="already">
+        <p>为保证您能正常使用该卡券，请先关注迪迦科技微信号。</p>
+        <img src="./img/common/erweima.jpg" alt="无法显示">
+        <h3>迪迦科技微信号：DJ_tech</h3>
+        <p>长按关注，更多惊喜等你呦~</p>
+      </div>
+
+    </section>
+
+    <section class="tab-panel">
       <div class="rule">
         <div class="phase1">
           <h2>可用门店：</h2>
@@ -47,8 +57,6 @@
           <p>2. 用户可在优惠券上注明地址的门店里使用。</p>
           <p>3. 点击下方的“赠送他人”可将自己的优惠券赠他人使用。</p>
         </div>
-
-
       </div>
     </section>
 
@@ -83,17 +91,16 @@
       </div>
     </section>
 
-
-
     <script type="text/javascript">
       var btnFir = document.getElementsByClassName('btn-fir')[0];
       var btnSed = document.getElementsByClassName('btn-sed')[0];
+      var already = document.getElementsByClassName('already')[0];
       btnFir.addEventListener('click',function(){
         btnFir.style.display="none";
         btnSed.style.display="flex";
+        already.style.display="flex";
       },false)
     </script>
-
 
   </body>
 </html>

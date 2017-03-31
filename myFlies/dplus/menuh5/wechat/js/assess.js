@@ -1,10 +1,10 @@
 
-$('.star').on('click',function(){
+$('.star-bg a').on('click',function(){
   var idx = $('.star').index($(this));
-  $('#stars').val(idx);
-  console.log(this);
-  console.log(idx);
-
+  $('.star').removeClass('stars');
+  for(var i=0; i<=idx; i++){
+    $('.star').eq(i).addClass('stars');
+  }
   if(idx===0){
     $('.assess').text('（差）');
   }else if(idx===1){
@@ -16,4 +16,10 @@ $('.star').on('click',function(){
   }else if(idx===4){
     $('.assess').text('（优秀）');
   };
+
 });
+
+
+  $('.button').on('click',function(){
+  window.location.href = "./app_confirm3.html";
+})

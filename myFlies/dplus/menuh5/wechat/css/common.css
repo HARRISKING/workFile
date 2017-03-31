@@ -1,9 +1,9 @@
 body {
-    margin: 0 auto;
-    max-width: 500px;
     font-size: 16px;
-    font-family:  微软雅黑 !important;
+    font-family:  "微软雅黑" !important;
     background-color: #eee;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 header {
@@ -58,6 +58,7 @@ button,a,div,section{
 .back {
     position: absolute;
     left: 10px;
+    top: 15px;
 }
 
 .back-icon {
@@ -69,14 +70,13 @@ button,a,div,section{
 }
 
 /*  取消选中边框*/
-
-* {
+/** {
     -moz-user-select: none;
     -o-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
+}*/
 
 input,
 textarea,

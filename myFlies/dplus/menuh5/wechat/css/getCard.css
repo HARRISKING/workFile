@@ -170,6 +170,33 @@ a,button,input,div{
     font-family: 微软雅黑;
     font-size: 20px;
 }
+
+.already{
+  flex-direction: column;
+  align-items: center;
+  margin: 3% auto;
+  display: none;
+}
+
+.already p{
+  color: #3266cc;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  line-height: 18px;
+  text-align: center;
+}
+
+.already p:last-child{
+  margin-top: 3%;
+}
+
+
+.already img{
+  width: 50%;
+  margin: 5% 0;
+}
+
 @media screen and (max-width:400px) {
   .c-top .c-note{font-size: 9px}
   .c-info .c-date{font-size: 9px}

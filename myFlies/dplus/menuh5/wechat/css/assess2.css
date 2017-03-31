@@ -121,7 +121,9 @@ textarea{
 .star4 { left: 60%; }
 .star5 { left: 80%; }
 
-.star:hover {
+/*這一部分是爲了兼容電腦端儅鼠標觸碰不點擊的效果*/
+
+/*.star:hover {
   background: url(../img/ad/Star2.png) repeat-x;
   background-size: 40px 40px;
   left: 0;
@@ -132,4 +134,16 @@ textarea{
 .star2:hover { width: 40%; }
 .star3:hover { width: 60%; }
 .star4:hover { width: 80%; }
-.star5:hover { width: 100%; }
+.star5:hover { width: 100%; }*/
+
+.stars{
+  background: url(../img/ad/Star2.png) repeat-x;
+  background-size: 40px 40px;
+}
+
+
+.active{
+  background: url(../img/ad/Star2.png) repeat-x;
+  background-size: 40px 40px;
+  left: 0;
+}

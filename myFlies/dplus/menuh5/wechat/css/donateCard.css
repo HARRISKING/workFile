@@ -1,3 +1,7 @@
+.a{
+  color: #999;
+
+}
 body{
   width: 100%;
   height: 100%;
@@ -12,9 +16,7 @@ body{
   height:80px;
   margin: 0 auto;
 }
-.down-border{
-  border-bottom: 2px solid black;
-}
+
 .tab1 p{
   font-size: 1.3rem;
   font-weight: 500;
@@ -44,11 +46,31 @@ body{
 .tab2 .box .amount{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .tab2 .box .amount p:first-child{
   margin-right: 10px;
   color: #999;
 }
+
+.cardsNum{
+  height: 20px;
+  margin-right: 5px;
+  color: #999;
+  border: none;
+  text-align: right;
+  font-size: 18px;
+}
+
+.message{
+  height: 20px;
+  width: 80%;
+  text-align: right;
+  color: black;
+  border: none;
+  font-size: 14px;
+}
+
 .word2{
   margin: 15px 3% 30px 3%;
   font-size: 0.8rem;
@@ -89,6 +111,19 @@ body{
   margin-bottom: 15px;
   font-size: 100%;
 }
+.total_share{
+  display: flex;
+  align-items: center;
+}
+
+.total_share input{
+  margin-right: 5px;
+  border: none;
+  color: black;
+  text-align: right;
+  font-size: 20px;
+}
+
 @media screen and (max-width:330px){
   .tab-panel{
     font-size: 0.8rem;
