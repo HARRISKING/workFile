@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <meta name="format-detection" content="telephone=no" />
+    <title>发布活动</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/release.css">
+    <link rel="stylesheet" href="./libs/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="release">
+                <div class="release-bar">
+                    <img src="http://cdn.q8oils.cc/b5ed036926a8badf3fbfc79526c7d348@x1.jpg" alt="">
+                </div>
+                <div class="release-form">
+                    <form id="release">
+                        <ul>
+                            <li><span>活动标题</span></li>
+                            <li>
+                                <input type="text" placeholder="2字以上15字以内">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><span>所在地区</span></li>
+                            <li>
+                                <select name="" id="">
+                                    <option value="">请选择省份</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">请选择城市</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><span>众筹金额(元)</span></li>
+                            <li>
+                                <input type="num" placeholder="请输入最低众筹金额">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><span>事件期限</span></li>
+                            <li>
+                                <input type="date">-
+                                <input type="date">
+                            </li>
+                        </ul>
+                        <div class="release-detail">
+                            <label for="">上传图片</label>
+                            <div class="upload-file">
+                                <div class="upload-item">
+                                    <input type="file" name="file" class="upload-img" accept="image/*">
+                                </div>    
+                            </div>
+                            <label for="">活动详情</label>        
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <button class="release-submit">发布</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/header.js"></script>
+</body>
+
+</html>

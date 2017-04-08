@@ -1,0 +1,48 @@
+.body{
+  width: 100%;
+}
+
+.pic>img{
+  width: 90%;
+  margin: 20px 5%;
+}
+
+.box1 h4{
+  width: 90%;
+  margin: 10px auto;
+}
+
+.box2{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 5% 2% 5%;
+  background-color: #fff;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.box2 span{
+  margin: 20px 10px;
+}
+
+.word2{
+  font-size: 14px;
+  color: #999;
+}
+
+.box3{
+  margin: 20% 5% 2% 5%;
+  background-color: rgb(254, 138, 1);
+  color: #fff;
+  border-radius: 5px;
+  padding: 4% 0;
+  text-align: center;
+}
+
+@media screen and (max-width:330px){
+  .word2{
+    font-size: 13px;
+
+  }
+}
