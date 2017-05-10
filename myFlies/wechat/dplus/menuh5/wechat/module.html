@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <meta name="format-detection" content="telephone=no" />
+    <title>订单详情</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/app_confirm.css">
+</head>
+
+<body>
+    <div class="cover"></div>
+    <div class="bomb-all">
+      <div class="bomb">
+        <div class="little-cancel">
+          <img src="./img/common/close.png" alt="">
+        </div>
+        <h3>找人代付</h3>
+        <div class="method-words">
+          <p>1.让此刻在您身边的人扫描下方二维码帮忙付款</p>
+          <p>2.点击右上角将此二维码分享给朋友，让朋友帮忙付款</p>
+        </div>
+        <img src="./img/me/70-01.png" alt="无法显示">
+        <div class="cue">
+          <p class="color-yellow">请扫上方二维码支付费用</p>
+          <div class="cue-price">
+            <p>本次订单总费用:</p>
+            <p class="color-yellow">800元</p>
+          </div>
+        </div>
+        <div class="btn2">
+          <div class="cancel2">取消支付</div>
+          <div class="pay-now">支付完成</div>
+        </div>
+      </div>
+    </div>
+    <section class="pay-footer">
+      <div class="btn1 cancel">
+        <a href="#">找人代付</a>
+      </div>
+      <div class="btn1 pay-now">
+        <a href="#">去支付</a>
+      </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+      $('.cancel').on('click',function(){
+        $('.cover').addClass('active');
+        $('.bomb').addClass('active1');
+      });
+      $('.little-cancel').on('click',function(){
+        $('.cover').removeClass('active');
+        $('.bomb').removeClass('active1');
+      })
+      $('.cancel2').on('click',function(){
+        $('.cover').removeClass('active');
+        $('.bomb').removeClass('active1');
+      })
+      $('.pay-now').on('click',function(){
+        $('.cover').removeClass('active');
+        $('.bomb').removeClass('active1');
+      })
+
+    </script>
+</body>
+
+</html>

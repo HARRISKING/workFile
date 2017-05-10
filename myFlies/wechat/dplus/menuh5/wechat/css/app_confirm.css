@@ -369,7 +369,7 @@ body{
 	background: #fff;
 	position: fixed;
 	top: 100px;
-	left: 5%;
+	/*left: 5%;*/
 	display: none;
 	z-index: 4;
 	margin: 0 auto;
